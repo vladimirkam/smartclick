@@ -1,0 +1,312 @@
+body{
+	font-family: "Times New Romans",arial,sans-serif;
+}
+#header{
+	font-size:14px;
+	background-color:#f3f3f3;
+	border:0;
+	margin-bottom:15px;
+}
+	.picto{
+		margin-right: 5px;
+		font-size:12px;
+		color:#000 !important;
+	}
+	.info-li{
+		margin-right: 30px;
+		padding-top: 15px;
+	}
+	.href-li{
+		color:#000;
+	}
+
+/*--header2--*/
+#header2{
+	font-family:"Calibri",arial,sans-serif;
+	font-style: italic;
+	font-size:17px;
+	padding-bottom: 15px;
+}
+
+@media screen and (max-width: 1100px){
+	#uslugi-menu{
+		font-size:14px;
+	}
+}
+@media screen and (min-width: 992px){
+	#uslugi-menu{
+		margin-left: 10%;
+	}
+}
+@media screen and (min-width: 4102px){
+	#uslugi-menu{
+		margin-left: 0px;
+	}
+}
+@media screen and (min-width: 5400px){
+	.href-li{
+		width: 33%;
+	}
+	#header2{
+		padding-bottom:10px;
+	}
+}
+
+	#uslugi-menu li a{
+		color:#000 !important;
+		border:0;
+		background-color:#fff;
+	}
+		#uslugi-menu li a:hover{
+			color:#bd3e31 !important;
+		}
+
+		@-webkit-keyframes hvr-icon-up {
+		  0%,
+		  50%,
+		  100% {
+		    -webkit-transform: translateY(0);
+		    transform: translateY(0);
+		  }
+
+		  25%,
+		  75% {
+		    -webkit-transform: translateY(-6px);
+		    transform: translateY(-6px);
+		  }
+		}
+
+		@keyframes hvr-icon-up {
+		  0%,
+		  50%,
+		  100% {
+		    -webkit-transform: translateY(0);
+		    transform: translateY(0);
+		  }
+
+		  25%,
+		  75% {
+		    -webkit-transform: translateY(-6px);
+		    transform: translateY(-6px);
+		  }
+		}
+
+		 #uslugi-menu li a:hover > .hvr-icon-up{
+		  -webkit-animation-name: hvr-icon-up;
+		  animation-name: hvr-icon-up;
+		  -webkit-animation-duration: 0.75s;
+		  animation-duration: 0.75s;
+		  -webkit-animation-timing-function: ease-out;
+		  animation-timing-function: ease-out;
+		}
+.btn-zakaz{
+	background-image: url(../img/btn_zakaz1.png);
+	width: 155px;
+	height: 34px;
+	background-repeat: no-repeat;
+	cursor:pointer;
+	display: inline-block;
+	margin: 0px auto;
+	margin-top: 5px;
+	-webkit-transition-duration: 0.7s; 
+	-o-transition-duration: 0.7s; 
+	-moz-transition-duration: 0.7s; 
+	transition-duration: 0.7s;
+}
+	.btn-zakaz:hover{
+		background-image: url(../img/btn_zakaz1_active.png);
+	}
+
+/*--block2--*/
+#block2{
+	background-image:url(../img/block2.jpg);
+	background-size:cover;
+	/*--fixed-bg--*/
+	background-attachment: fixed;
+	padding-top: 125px;
+	padding-bottom: 125px;
+	font-family:"Calibri",sans-serif;
+}
+	.slogan{
+		color:#fff;
+		font-size:34px;
+	}
+	.slogan-prepis{
+		font-size:34px;
+		color:#fff;
+	}
+	.btn-zakaz-block2{
+		background-image: url(../img/btn-zakaz-block2.png);
+		max-width: 270px;
+		height: 50px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor:pointer;
+		display: block;
+		margin: 0px auto;
+		margin-top: 95px;
+		-webkit-transition-duration: 0.7s; 
+		-o-transition-duration: 0.7s; 
+		-moz-transition-duration: 0.7s; 
+		transition-duration: 0.7s;
+	}
+		.btn-zakaz-block2:active{
+			background-image: url(../img/btn-zakaz-block2-active.png);
+		}
+		@media screen and (max-width: 300px){
+			.btn-zakaz-block2{
+				background-image: url(../img/btn_zakaz1.png);
+				width: 155px;
+				height: 34px;
+				background-repeat: no-repeat;
+				cursor:pointer;
+				display: block;
+				margin: 0px auto;
+				margin-top: 45px;
+				-webkit-transition-duration: 0.7s; 
+				-o-transition-duration: 0.7s; 
+				-moz-transition-duration: 0.7s; 
+				transition-duration: 0.7s;
+			}
+			.btn-zakaz-block2:hover{
+				background-image: url(../img/btn_zakaz1_active.png);
+			}
+		}
+
+/*--block3--*/
+#block3{
+	padding-top: 35px;
+	padding-bottom: 60px;
+	box-shadow: inset 0px 0px 27px -10px;
+}
+	.zaglav-block{
+		font-size:25px;
+		font-weight: 500
+	}
+	.black-zaglav-block{
+		padding-bottom: 45px;
+		color:#333333;
+	}
+	#list-uslug{
+		margin: 0 auto;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;  /* чтобы картинки стояли в одну линию, не переходя на другую строку */
+		word-wrap: normal;  /* то же для IE */
+		width: 850px;
+		padding-bottom: 15px;
+	}
+		#list-uslug img{
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+#list-uslug::-webkit-scrollbar{
+    width:12px;
+    height:40px;
+}
+#list-uslug::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    background-image: url(../img/scrollbar-thimb.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+#list-uslug::-webkit-scrollbar-thumb:hover{
+}
+#list-uslug::-webkit-scrollbar-track{
+    background-image:url(../img/scrollbar-track.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+@media screen and (min-width: 992px){
+	#uslugi-menu{
+		margin-left: 10%;
+	}
+}
+@media screen and (max-width: 992px){
+	#list-uslug{
+		width:560px;
+	}
+}
+@media screen and (max-width: 550px){
+	#list-uslug{
+		width:290px;
+	}
+}
+
+/*--block4--*/
+#block4{
+	background-color: #3a6f81;
+	padding-top: 35px;
+	color:#fff;
+	font-size:18px;
+	font-family: arial,sans-serif;
+	padding-bottom: 60px;
+}
+	.white-zaglav-block{
+		color:#fff;
+		padding-bottom: 25px;
+	}
+
+#block5{
+	padding-top: 65px;
+	box-shadow: inset 0px 0px 27px -10px;
+}
+	#block5 img{
+		margin-bottom: 65px;
+	}
+
+/*--block6--*/
+#block6{
+	padding-top: 35px;
+	background-image: url(../img/block6.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size:20px;
+	font-family: "Calibri",arial,sans-serif;
+	color:#fff;
+	padding-bottom: 90px;
+}
+	#block6 img{
+		float: left;
+		margin-right: 15px;
+	}
+	.preem-vertical-img{
+		margin-top: 10px;
+	}
+	.preem_item{
+		margin-bottom: 20px;
+	}
+
+/*--block7--*/
+#block7{
+	padding-top: 20px;
+}
+	#form-no-modal{
+		background-color:#f5f5ed;
+		max-width:600px;
+		margin: 0px auto;
+		padding-left: 75px;
+		padding-right: 75px;
+		box-shadow: 0px 0px 9px -3px;
+		padding-top: 10px;
+		padding-bottom: 25px;
+	}
+		.zaglav-form{
+			color:#d37676;
+			font-size:22px;
+			font-family:"Calibri",arial,sans-serif;
+		}
+		#inputName{
+			margin-top: 15px;
+		}
+		.form-control{
+			height: 40px !important;
+		}
+		#inputText{
+			height: 90px !important;
+			padding-bottom: 50px !important;
+		}
+		.tooltip-inner{
+			white-space: pre;
+			max-width:350px !important;
+		}
