@@ -280,6 +280,7 @@ body{
 /*--block7--*/
 #block7{
 	padding-top: 20px;
+	padding-bottom: 55px;
 }
 	#form-no-modal{
 		background-color:#f5f5ed;
@@ -306,7 +307,19 @@ body{
 			height: 90px !important;
 			padding-bottom: 50px !important;
 		}
-		.tooltip-inner{
-			white-space: pre;
-			max-width:350px !important;
-		}
+#block8{
+	background-image: url(../img/block7.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center center;
+	padding-top: 25px;
+}
+
+.footer{
+	background-color:#f3f3f3;
+	color:#6a6a6a;
+	font-size:18px;
+	font-family: "Calibri",arial,sans-serif;
+	padding-top: 45px;
+	padding-bottom: 25px;
+}
