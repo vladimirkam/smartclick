@@ -19,6 +19,9 @@ body{
 	.href-li{
 		color:#000;
 	}
+	#uslugi-menu .active-main-menu a{
+		color:#bd3e31 !important;
+	}
 
 /*--header2--*/
 #header2{
@@ -123,8 +126,8 @@ body{
 	background-size:cover;
 	/*--fixed-bg--*/
 	background-attachment: fixed;
-	padding-top: 125px;
-	padding-bottom: 125px;
+	padding-top: 75px;
+	padding-bottom: 85px;
 	font-family:"Calibri",sans-serif;
 }
 	.slogan{
@@ -137,7 +140,7 @@ body{
 	}
 	.btn-zakaz-block2{
 		background-image: url(../img/btn-zakaz-block2.png);
-		max-width: 270px;
+		width: 270px;
 		height: 50px;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -150,7 +153,7 @@ body{
 		-moz-transition-duration: 0.7s; 
 		transition-duration: 0.7s;
 	}
-		.btn-zakaz-block2:active{
+		.btn-zakaz-block2:hover{
 			background-image: url(../img/btn-zakaz-block2-active.png);
 		}
 		@media screen and (max-width: 300px){
@@ -193,13 +196,42 @@ body{
 		overflow-y: hidden;
 		white-space: nowrap;  /* чтобы картинки стояли в одну линию, не переходя на другую строку */
 		word-wrap: normal;  /* то же для IE */
-		width: 850px;
+		width: 872px;
 		padding-bottom: 15px;
 	}
-		#list-uslug img{
-			margin-left: 10px;
-			margin-right: 10px;
+		.uslugi-item{
+			padding: 0;
+			width: 256px;
+			height: 324px;
+			background-image:url(../img/uslugi-item.png);
+			background-size: cover;
+			box-shadow: 0px 0px 24px -9px;
+			list-style: none;
+			font-family: arial,sans-serif;
+			font-size:16px;
+			text-align: center;
+			color:#4c4c4c;
+			overflow: hidden;
+			display: inline-block !important;
+			margin-left: 15px;
+			margin-right: 15px;
 		}
+			.uslugi-item li{
+				margin-top: 9px;
+			}
+			.uslugi-item li:first-child{
+				font-family: "Calibri",arial,sans-serif;
+				font-size:20px;
+				margin-top: 15px;
+				margin-bottom: 17px;
+			}
+			.uslugi-item-btn{
+				border:none !important;
+				margin-top: 8px;
+				width: 150px;
+				height: 28px;
+				background-image: url(../img/uslugi-item-btn.png) !important;
+			}
 #list-uslug::-webkit-scrollbar{
     width:12px;
     height:40px;
@@ -224,12 +256,12 @@ body{
 }
 @media screen and (max-width: 992px){
 	#list-uslug{
-		width:560px;
+		width:582px;
 	}
 }
 @media screen and (max-width: 550px){
 	#list-uslug{
-		width:290px;
+		width:294px;
 	}
 }
 
@@ -290,7 +322,8 @@ body{
 		padding-right: 75px;
 		box-shadow: 0px 0px 9px -3px;
 		padding-top: 10px;
-		padding-bottom: 25px;
+		/*padding-bottom: 25px;*/
+		margin-bottom: 20px;
 	}
 		.zaglav-form{
 			color:#d37676;
@@ -306,6 +339,15 @@ body{
 		#inputText{
 			height: 90px !important;
 			padding-bottom: 50px !important;
+			margin-bottom: 15px;
+		}
+		.feedback{
+			width: 230px;
+			height: 55px;
+			display: block !important;
+			background-image: url(../img/btn-zakaz.png) !important;
+			margin: 0px auto !important; 
+			border:none !important;
 		}
 #block8{
 	background-image: url(../img/block7.jpg);
@@ -323,3 +365,72 @@ body{
 	padding-top: 45px;
 	padding-bottom: 25px;
 }
+
+/*-- develop-site --*/
+.develop-site{
+	background-color: #fafafa;
+	padding-top: 30px;
+	padding-bottom: 5px;
+	-webkit-box-shadow: inset 0px 6px 29px -16px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 6px 29px -16px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 6px 29px -16px rgba(0,0,0,0.75);
+}
+	.main-text-develop{
+		font-family: Verdana,arial,sans-serif;
+		font-size:14px;
+	}
+	.zaglav-develop{
+		font-family: "Calibri",arial,sans-serif;
+		font-size:20px;
+		color:#000;
+		margin-bottom: 35px;
+	}
+	.develop-sidebar{
+		font-family: arial,sans-serif;
+		font-size:15px;
+		list-style-type:square;
+	}
+		.develop-sidebar li{
+			color:#e84c3c;
+			margin-bottom: 8px;
+		}
+		.develop-sidebar li a{
+			color:#333333;
+			text-decoration: none;
+			border-bottom:1px solid #333333;
+		}
+			.develop-sidebar li a:hover{
+				border:none;
+			}
+		.active-sidebar-item{
+			color:#c64336 !important;
+		}
+			.active-sidebar-item a{
+				color:#e84c3c !important;
+				border:none !important;
+			}
+	.bottom-text-develop{
+		margin-top: 45px;
+		font-family: "Calibri",arial,sans-serif;
+	}
+		.zaglav-bottom-text-develop{
+			font-size:20px;
+			margin-bottom: 40px;
+		}
+		.bottom-text-develop-item{
+			font-size:16px;
+			font-weight: 500;
+			margin-bottom: 50px;
+			height: 40px;
+		}
+			.bottom-text-develop-item span{
+				margin-top: 2px;
+				display: block;
+			}
+			.bottom-text-develop-item img{
+				float: left;
+				margin-right: 15px;
+			}
+			.need-margin{
+				margin-top: 6px;
+			}
